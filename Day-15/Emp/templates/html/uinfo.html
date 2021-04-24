@@ -1,0 +1,33 @@
+{% extends 'html/header.html' %}
+{% block title %}userinfo{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="row mt-5 mx-auto">
+		<div class="card col-md mx-2">
+			<h3 class="bg-secondary text-center text-light p-2 border rounded">basic details</h3>
+			<table class="table table-borderless">
+			<tr>
+			<th>username</th>
+			<td>{{y.username}}</td></tr>
+			<tr>
+				<th>email</th>
+				<td>{{y.email}}</td>
+			</tr>
+		</table>
+		</div>
+		<div class="card col-md mx-2">
+			<h3 class="bg-info text-center text-dark border rounded p-3 mt-3">full details</h3>
+			<table class="table table-borderless">
+				<tr>
+					<th> Mobile Number</th>
+					<td>{{yu.mobile}}</td>
+				</tr>
+				<tr>
+					<th> Gender</th>
+					<td>{{yu.gender}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+{% endblock %}
